@@ -36,7 +36,43 @@ comparação tem que ser feita **no atendimento e na receita**, nunca no custo p
 O ponto fraco do Meta é a conversão de conversa em atendimento: só ~4% (Cervicoplastia: 1.297
 leads → 28 atendimentos). No Google o esperado é 10–20%. É aí que o Google pode empatar ou ganhar.
 
-## 2. Por que provavelmente "não funcionou" antes (checar na conta)
+## 2. Diagnóstico da conta atual (Google Ads 861-981-4214, lido em 30/10/2026)
+
+Só a configuração foi lida (o Supermetrics está com o teste vencido e não libera gasto/cliques/
+conversões). Campanhas ativas:
+
+| Campanha | Tipo | Orçamento/dia | Problemas encontrados |
+|---|---|---|---|
+| Rede de Pesquisa -HOF (desde 2019) | Pesquisa | **R$ 225** | Anúncios **reprovados**; extensão de ligação reprovada; status "Limitada"; **AI Max e expansão de URL ligados** (o Google escolhe sozinho buscas e páginas); local em **"Presença ou interesse"** (mostra para quem não está no Rio); lance "Maximizar conversões" otimizando para uma conversão errada (abaixo) |
+| Harmonização Facial (desde 10/2025) | **Campanha Inteligente** | R$ 16,60 | Tipo de campanha sem controle de palavras, negativas ou termos de pesquisa |
+
+Pausadas e antigas (2018): Remarketing (Display), Teste 1, Implante Dentário, Geral Zona Sul.
+
+**O problema principal está nas conversões.** A conversão principal da conta é "Site", do tipo
+**visualização de página, contando várias por clique**. Ou seja: para o Google, toda pessoa que
+abre o site é uma "conversão". Com "Maximizar conversões", o algoritmo vai atrás de quem
+clica e abre a página — não de quem chama no WhatsApp ou agenda. Não existe nenhuma conversão
+de clique no WhatsApp. Isso sozinho explica o Google "não funcionar".
+
+Somando os orçamentos ativos, a conta pode gastar até **~R$ 7.250/mês** — mais que o dobro do
+ritmo do Meta (~R$ 3.400/mês) — sem medir nada que importe.
+
+### Correções imediatas (antes de qualquer campanha nova)
+
+1. **Baixar o orçamento** da "Rede de Pesquisa -HOF" para R$ 60/dia até a medição estar certa.
+2. **Conversão "Site"**: mudar para **secundária** (não usar no lance).
+3. **Criar a conversão "Clique no WhatsApp"** (Google Tag Manager, contar **uma por clique**) e
+   marcar como **principal**. Manter "Calls from ads" como principal também.
+4. **Local**: trocar para "Presença: pessoas que estão ou costumam estar no local".
+5. **Desligar AI Max e expansão de URL final** até ter conversões confiáveis.
+6. **Corrigir os anúncios reprovados** — quase certamente por nome de medicamento
+   (botox/toxina) no texto ou na página. Usar os anúncios de `anuncios.csv`.
+7. **Pausar a Campanha Inteligente** "Harmonização Facial" e migrar os termos para
+   Pesquisa normal.
+8. Passar o lance para **Maximizar cliques (CPC máx. R$ 6)** até ter ~30 conversões reais
+   de WhatsApp/ligação no mês; aí voltar para Maximizar conversões.
+
+### Erros comuns que este diagnóstico confirmou ou que ainda falta checar
 
 Os erros que mais matam Google Ads de clínica:
 
